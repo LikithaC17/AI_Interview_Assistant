@@ -11,6 +11,6 @@ try:
   client=Groq(apl_key=st.secrets['GROG_API_KEY'])
   st.write("API connection Successfull")
 except(KeyError, FileNotFoundError):
-  st.error('Groq_API is missing. Add it to the Streamlit Cloud')
+  st.error('Groq_API is missing. Add it to the Streamlit Cloud--> App setting')
   st.stop()
 
