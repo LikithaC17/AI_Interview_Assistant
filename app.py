@@ -8,7 +8,7 @@ st.caption('Launch by Likitha')
 st.write('Department of AI&DS')
 
 try:
-  client=Groq(api_key=st.secrets['GROG_API'])
+  client=Groq(api_key=st.secrets['GROQ_API'])
   st.write("API connection Successfull")
 except(KeyError, FileNotFoundError):
   st.error('GROQ_API is missing. Add it to the Streamlit Cloud--> App setting')
