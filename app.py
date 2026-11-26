@@ -6,3 +6,11 @@ st.title('AI_Interview_Assistant')
 st.caption('Practice Interview with AI generated question')
 st.caption('Launch by Likitha')
 st.write('Department of AI&DS')
+
+try:
+  client=Groq(apl_key=st.secrects['GROG_API_KEY'])
+  st.write("API connection Successfull")
+except(KeyError, FileNotFoundError):
+  st.error('Good_API_KEY is missing. Add it to the Streamlit Cloud')
+  st.stop()
+
