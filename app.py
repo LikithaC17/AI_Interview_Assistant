@@ -14,3 +14,12 @@ except(KeyError, FileNotFoundError):
   st.error('GROQ_API is missing. Add it to the Streamlit Cloud--> App setting')
   st.stop()
 
+role= st.selection('Select Job Role', [
+  "Python Developer",
+  "Java Developer",
+  "Data Analyst",
+  "Machine Learning Engineering",
+  "Software Enigineer",
+  "HR Executive"
+])
+  
